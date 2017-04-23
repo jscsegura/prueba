@@ -13,15 +13,15 @@ int main() {
 	int B;//!< Segundo sumando
 	int C;//!< Resultado
 
-	printf("Escriba el primer sumando:\n ")
-	scanf("%d", &A)
+	printf("Escriba el primer sumando:\n ");
+	scanf("%d", &A);
 
-	printf("Escriba el segundo sumando:\n ")
-	scanf("%d", &B)
+	printf("Escriba el segundo sumando:\n ");
+	scanf("%d", &B);
 
 	C=A+B;
 
-printf("El resultado es: %d", C)
+printf("El resultado es: %d\n", C);
 	
     return 0;
 }
