@@ -1,6 +1,4 @@
-#include <stdio.h>
-
-
+#include<stdio.h>
 int main() {
 
 	/*! \brief Brief description.
@@ -10,40 +8,33 @@ int main() {
  */
 
     // Declarar variables iniciales 
-    	int N;//!< Primer sumando
-	int A=0;//!< Segundo sumando
-	int B=1;//!< Resultado
+	int n;
+	int A = 0 ;
+	int B = 1; 
+	int i;
+	int C;
+ 
+   printf("Ingrese el término de la sucesión de Fibonacci que desea obtener\n");
+   scanf("%d",&n);
 
-	printf("Escriba el número de término que desee averiguar:\n ");
-	scanf("%lf", &N);
-
-
-	if(N>0){
-		if(N=1){
-		printf("El número %d de la secuencia de Fibonacci es: %d\n", N,A);
-		return 0;
-	}
-		else{
-			if(N=2){
-			printf("El número %d de la secuencia de Fibonacci es: %d\n", N,B);
-			return 0;
-		}
-			else{
-			 	for (int i=1,i<= N-2, i++){
-				C= A+B;
-				A=B;
-				B=C;
-
-				}	
-			}	
-		}
-	}
+if (n<=0){
+	 printf("Ingrese un numero positivo mayor que cero\n");
+  	 return 0;
 }
-	else{
-	printf("No existe tal número. Este debe de ser un número positivo mayor que cero.\n ");
+else{
 
+   for ( i = 0 ; i < n ; i++ )
+   {
+      if ( i <= 1 )
+         C = i;
+      else
+      {
+         C= A + B;
+         A = B;
+         B = i;
+      }
+   }
 }
-printf("El resultado es: %lf\n", C);
-	
-    return 0;
+   printf("El término que busca es %d\n",C);
+   return 0;
 }
