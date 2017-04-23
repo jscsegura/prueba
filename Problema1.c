@@ -8,16 +8,20 @@ int main() {
  *  Detailed description starts here.
  */
 
-    // Declara variable 'salir' y le asigna un valor inicial
-    int salir = 1;
+    // Declarar variables iniciales 
+    	int A;//!< Primer sumando
+	int B;//!< Segundo sumando
+	int C;//!< Resultado
 
-    // Itera mientras el valor de 'salir' sea distinto de cero
-    while(salir != 0) {
-        printf("Escriba '0' para salir: ");
+	printf("Escriba el primer sumando:\n ")
+	scanf("%d", &A)
 
-        // Lee un entero y lo guarda en 'salir'
-        scanf("%d", &salir);
-    }
+	printf("Escriba el segundo sumando:\n ")
+	scanf("%d", &B)
 
+	C=A+B;
+
+printf("El resultado es: %d", C)
+	
     return 0;
 }
