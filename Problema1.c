@@ -9,19 +9,19 @@ int main() {
  */
 
     // Declarar variables iniciales 
-    	int A;//!< Primer sumando
-	int B;//!< Segundo sumando
-	int C;//!< Resultado
+    	double A;//!< Primer sumando
+	double B;//!< Segundo sumando
+	double C;//!< Resultado
 
 	printf("Escriba el primer sumando:\n ");
-	scanf("%d", &A);
+	scanf("%lf", &A);
 
 	printf("Escriba el segundo sumando:\n ");
-	scanf("%d", &B);
+	scanf("%lf", &B);
 
 	C=A+B;
 
-printf("El resultado es: %d\n", C);
+printf("El resultado es: %lf\n", C);
 	
     return 0;
 }
