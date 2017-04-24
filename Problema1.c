@@ -2,10 +2,10 @@
 
 int main() {
 
-	/*! \brief Brief description.
- *         Brief description continued.
+	/*! \brief Suma de dos números 
+ *         
  *
- *  Detailed description starts here.
+ *  Este programa da la posibilidad al usuario de sumar dos números cualesquiera, inclusive si estos presentan decimales. 
  */
 
     // Declarar variables iniciales 

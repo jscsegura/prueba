@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <math.h>
-#include <complex.h>
 
 int main() {
 
-/*! \brief Brief description.
- *         Brief description continued.
+/*! \brief Bubble Sort.
+ *         
  *
- *  Detailed description starts here.
+ *  Este programa permite que el usuario ingrese un tamaño del array que desea generar. El mismo llenará las N plazas con números aleatorios, que van del 0 al 500. Dicha lista se desplegará una vez se ha 
  */
 
  	int N;
@@ -21,7 +19,7 @@ int main() {
 
 	for (i=0; i<=N;i++){
 
-		array[i]=rand()%501;
+		array[i]=rand()%501; //rand() % (max_number + 1 - minimum_number) + minimum_number
 
 	}
 
@@ -36,7 +34,7 @@ int main() {
  	 {
     		for (j = 0 ; j < N - i - 1; j++)
     		{
-     			 if (array[j] < array[j+1]) /* For decreasing order use < */
+     			 if (array[j] < array[j+1]) 
      			 {
        				t       = array[j];
         			array[j]   = array[j+1];
